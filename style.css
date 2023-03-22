@@ -20,7 +20,7 @@ body{
 }
 
 .first-container{
-    width: 12%;
+    width: 13%;
     background-color: black;
     position: fixed;
     height: 90vh;
@@ -30,7 +30,7 @@ body{
 }
 
 .second-container{
-    width: 88%;
+    width: 87%;
     margin: auto;
     width: 100vw;
 }
@@ -40,8 +40,8 @@ body{
 /* Header */
 
 .head{
-    background-color: blue;
-    height: 5rem;
+    background-color: #090a16;
+    height: 6rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -60,14 +60,15 @@ body{
 }
 
 .button{
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-inline: 2rem;
-    border-radius: 20px;
-    background-color: blue;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-inline: 3rem;
+    border-radius: 25px;
+    background-color: #090a16;
     color: white;
     border: 1px solid white;
     margin-left: 5rem;
+    font-weight: 800;
     
 }
 
@@ -75,7 +76,7 @@ body{
 /* Main */
 
 .main-container{
-    background-color: grey;
+    background-color: #1a1c2b;
     height: 200vh;
     overflow-y: scroll;
 
@@ -84,43 +85,88 @@ body{
 
 .container{
     max-width: 100%;
-    padding-left: 15rem;
+    padding-left: 17rem;
     padding-right: 1rem;
-    padding-top: 6rem;
+    padding-top: 7rem;
     margin: auto;
    
 }
 
 .container-list{
     display: flex;
-    justify-content: center;
-    display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .lista-menù{
     font-weight: 800;
-    font-size: 11px;
+    font-size: 16px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     padding-bottom: 2rem;
+    color: grey;
 }
 
 .menù{
-    margin-inline: 0.5rem;
+    margin-inline: 1rem;
 }
+
+.title-menù{
+    color: white;
+    padding: 0.4rem;
+    font-size: 36px;
+
+}
+
+.linea-verde{
+    width: 40px;
+    margin-inline: 2.5rem;
+    color: greenyellow;
+}
+
 
 
 .music-container{
     max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .music{
-    width: 15%;
-    margin-left: 1rem ;
-    
+    text-align: center;
+}
+
+.img-music{
+    flex-basis: 20%;
+    height: 252px;
+    margin: 0.5rem;
+}
+
+
+.sottotitolo{
+    margin: 0.5rem;
+    font-weight:800;
+    font-size: 15px;
+    color: grey;
+}
+
+.playlist{
+    text-align: center;
+    font-weight: 800;
+    color: white;
+    font-size: 20px;
+}
+
+.circle{
+    border-radius: 100%;
+}
+
+.Stranger{
+    width: 250px;
+    padding-inline: 0.5rem;
+    margin-left: 0.5rem;
 }
 
 
