@@ -20,18 +20,17 @@ body{
 }
 
 .first-container{
-    width: 20%;
+    width: 12%;
     background-color: black;
     position: fixed;
-    height: 100vh;
+    height: 90vh;
     top: 0;
-
     bottom: 0;
     z-index: 20;
 }
 
 .second-container{
-    width: 80%;
+    width: 88%;
     margin: auto;
     width: 100vw;
 }
@@ -41,27 +40,95 @@ body{
 /* Header */
 
 .head{
-    background-color: #000000e2;
-    height: 6rem;
+    background-color: blue;
+    height: 5rem;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 20;
+    z-index: 15;
+
 }
+
+.div-button{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 99vw;
+}
+
+.button{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-inline: 2rem;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    border: 1px solid white;
+    margin-left: 5rem;
+    
+}
+
+
+/* Main */
 
 .main-container{
-    background-color: rgba(0, 0, 0, 0.806);
+    background-color: grey;
     height: 200vh;
     overflow-y: scroll;
+
 }
 
 
+.container{
+    max-width: 100%;
+    padding-left: 15rem;
+    padding-right: 1rem;
+    padding-top: 6rem;
+    margin: auto;
+   
+}
+
+.container-list{
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.lista-menù{
+    font-weight: 800;
+    font-size: 11px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+
+.menù{
+    margin-inline: 0.5rem;
+}
+
+
+.music-container{
+    max-width: 100%;
+}
+
+.music{
+    width: 15%;
+    margin-left: 1rem ;
+    
+}
+
+
+/* Footer */
 
 .play-bar{
-    background-color: #000000e2;
-    height: 8rem;
+    background-color: darkgrey;
+    height: 6rem;
     position: fixed;
     bottom: 0;
     left: 0;
