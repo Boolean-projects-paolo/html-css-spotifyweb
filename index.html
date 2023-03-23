@@ -10,137 +10,203 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <title>Document</title>
 </head>
-<body>  
-
-
-    <div class="big-container">
-
-        <div class="first-container">
-
+<body class="container">
+    <header class="sidebar">
+        <div class="div-button">
+            <button class="button">
+                EFFETTUA L'UPGRADE
+            </button>
         </div>
+    </header>
 
-        <div class="second-container">
+    <main class="main-container">
+        <section class="first-container">
+            <div class="logo"><img src="img/logo.svg" alt=""></div>
 
-            <header class="head">
-                <div class="div-button">
-                    <button class="button">
-                        EFFETTUA L'UPGRADE
-                    </button>
+            <div class="playlist-container">
+
+                <div class="playlist-menù">
+                    <ul>
+                        <li class="icon-playlist"><img src="img/home.svg" alt="" class="home"> <p class="write"></p> Home</li>
+                        <li class="icon-playlist"><img src="img/search.svg" alt=""> <p class="write"></p> Cerca</li>
+                        <li class="icon-playlist"> <img src="img/libreria.svg" alt=""> <p class="write library">La tua libreria</p></li>
+                    </ul>
+                </div> 
+                
+                <div class="playlist">
+                    <h4 class="title-playlist">PLAYLIST</h4>
+                    <div class=""></div>
+                    <ul class="list-playlist">
+                        <li class="name-playlist create-playlist"><i class="fa-sharp fa-solid fa-square-plus"></i><p>Crea Playlist</p></li>
+                        <li class="name-playlist">Nome Playlist</li>
+                        <li class="name-playlist">Nome Playlist</li>
+                        <li class="name-playlist">Nome Playlist</li>
+                        <li class="name-playlist">Nome Playlist</li>
+                        <li class="name-playlist">Nome Playlist</li>
+                        <li class="name-playlist">Nome Playlist</li>
+                        <li class="name-playlist">Nome Playlist</li>
+                    </ul>
                 </div>
+                
+                <div class="playlist-footer">
+                    <ul>
+                        <li class="icon-download "> <img src="img/download.svg" class="download" alt=""> <p>Installa app</p></li>
+                        <hr class="line-footer">
+                        <li class="icon-profile"><img src="img/profile.svg" class="profile" alt=""><p>John Doe</p></li>
+                    </ul>
+                </div>
+            </div>
 
-            </header>
-        
-            <main class="main-container">
-                <div class="container">
-                    <div class="container-list">
-                        <ul class="lista-menù">
-                            <li class="menù">IN EVIDENZA
-                                <hr class="linea-verde">
-                            </li>
-                            <li class="menù">PODCAST</li>
-                            <li class="menù">CLASSIFICHE</li>
-                            <li class="menù">GENERI E MOOD</li>
-                            <li class="menù">NUOVE USCITE</li>
-                            <li class="menù">SCOPRI</li>
-                        </ul>
 
-                        <h2 class="title-menù">Recently played</h2>
 
-                        <div class="music-container">
-                            <div class="music">
-                                <div class="playlist">
-                                    <img src="img/metal_lifting.jpg" alt="" class="img-music">
-                                    <p>Heavy Metal</p>
-                                </div>
-                                    <p class="sottotitolo">Subtitle</p>
-                            </div>
-                            <div class="music">
-                                <div class="playlist">
-                                    <img src="img/stranger.jpeg" alt="" class="img-music">
-                                    <p class="Stranger">Stranger Thingd, Vol. 1 (a Netflix Original Series Soundtrack)</p>
-                                </div>
-                                    <p class="sottotitolo">Subtitle</p>
-                                
-                            </div>
-                            <div class="music">
-                                <div class="playlist">
-                                    <img src="img/aquietplace.jpeg" alt="" class="img-music">
-                                    <p>A quiet place</p>
-                                </div>
-                                    <p class="sottotitolo">Subtitle</p>
 
-                            </div>
-                            <div class="music">
-                                <div class="playlist">
-                                    <img src="img/split.jpeg" alt="" class="img-music">
-                                    <p>Split</p>
-                                </div>
-                                    <p class="sottotitolo">Subtitle</p>
+        </section>
+        <section class="second-container">
+            <div class="container-list">
+                <ul class="lista-menù">
+                    <li class="menù">IN EVIDENZA
+                        <hr class="linea-verde">
+                    </li>
+                    <li class="menù">PODCAST</li>
+                    <li class="menù">CLASSIFICHE</li>
+                    <li class="menù">GENERI E MOOD</li>
+                    <li class="menù">NUOVE USCITE</li>
+                    <li class="menù">SCOPRI</li>
+                </ul>
 
-                            </div>
-                            <div class="music">
-                                <div class="playlist">
-                                    <img src="img/cure.jpeg" alt="" class="img-music">
-                                    <p>A cure for wellness</p>
-                                </div>
-                                    <p class="sottotitolo">Subtitle</p>
-                            </div>
-                            <div class="music">
-                                <div class="playlist">
-                                    <img src="img/sinister.jpeg" alt="" class="img-music">
-                                    <p>Sinister</p>
-                                </div>  
-                                    <p class="sottotitolo">Subtitle</p>
-                            </div>
+                <h2 class="title-menù">Recently played</h2>
+
+                <div class="music-container">
+                    <div class="music">
+                        <div class="music-title">
+                            <img src="img/metal_lifting.jpg" alt="" class="img-music">
+                            <p>Heavy Metal</p>
                         </div>
+                            <p class="sottotitolo">Subtitle</p>
+                    </div>
+                    <div class="music">
+                        <div class="music-title">
+                            <img src="img/stranger.jpeg" alt="" class="img-music">
+                            <p class="Stranger">Stranger Thingd, Vol. 1 (a Netflix Original Series Soundtrack)</p>
+                        </div>
+                            <p class="sottotitolo">Kyle Dixon & Michael Stein</p>
+                        
+                    </div>
+                    <div class="music">
+                        <div class="music-title">
+                            <img src="img/aquietplace.jpeg" alt="" class="img-music">
+                            <p>A quiet place</p>
+                        </div>
+                            <p class="sottotitolo">Subtitle</p>
+
+                    </div>
+                    <div class="music">
+                        <div class="music-title">
+                            <img src="img/split.jpeg" alt="" class="img-music">
+                            <p>Split</p>
+                        </div>
+                            <p class="sottotitolo">Subtitle</p>
+
+                    </div>
+                    <div class="music">
+                        <div class="music-title">
+                            <img src="img/cure.jpeg" alt="" class="img-music">
+                            <p>A cure for wellness</p>
+                        </div>
+                            <p class="sottotitolo">Subtitle</p>
+                    </div>
+                    <div class="music">
+                        <div class="music-title">
+                            <img src="img/sinister.jpeg" alt="" class="img-music">
+                            <p>Sinister</p>
+                        </div>  
+                            <p class="sottotitolo">Subtitle</p>
                     </div>
                 </div>
 
-
-                <div class="container">
+                <div class="mix-container">
                     <h2 class="title-menù">Creato per John Doe</h2>
-                    <p class="sottotitolo">Più ascolti, più accurati saranno i suggerimenti.</p>
+                    <p class="sottotitolo titolo2">Più ascolti, più accurati saranno i suggerimenti.</p>
 
                     <div class="music-container">
-                        <div class="playlist">
+                        <div class="music music-title mix">
                             <img src="img/radar.jpeg" alt="" class="img-music">
                             <p>Release Radar</p> 
                         </div>
-                        <div class="playlist">
+                        <div class=" music music-title mix">
                             <img src="img/mixdaily.jpeg" alt="" class="img-music">
                             <p>Daily Mix 1</p>
                         </div>
                     </div>
                 </div>
-                
-                <div class="container">
+
+                <div class="mix-container">
                     <h2 class="title-menù">Artisti più popolari</h2>
-                    <p class="sottotitolo">più ascolti, più accurati saranno i suggerimenti.</p>
+                    <p class="sottotitolo titolo2">Più ascolti, più accurati saranno i suggerimenti.</p>
 
                     <div class="music-container">
-                        <div class="playlist">
+                        <div class="music music-title">
                             <img src="img/youg.jpeg" alt="" class="img-music circle">
                             <p>Lana del Rey</p> 
                         </div>
-                        <div class="playlist">
+                        <div class="music music-title">
                             <img src="img/einaudi.jpeg" alt="" class="img-music circle">
                             <p>Ludovico Einaudi</p>
                         </div>
                     </div>
                 </div>
+        </section>
 
-            </main>
+    </main>
+
+    <footer class="play-bar">
+        <div class="left">
+            <div class="left-left">
+                <img src="img/sinister.jpeg" alt="" class="play musica">
+                <ul class="musica">
+                    <li class="title-play-music"><p>Sinister</p></li>
+                    <li class="name-play-music"><p>Brano Nome</p></li>
+                </ul>
+            </div>
+
+
+            <div class="left-right">
+                <span class="icon"><i class="fa-sharp fa-regular fa-heart"></i></span>
+                <span class="icon"><i class="fa-regular fa-folder"></i></span>
+            </div>
         </div>
 
+        <div class="center">
+            <div class="center-up">
+                <span class="bar-play"></span>
+                <span class="bar-play"><i class="fa-solid fa-shuffle"></i></span>
+                <span class="bar-play"><i class="fa-solid fa-backward-step"></i></span>
+                <span class="bar-play"><i class="fa-regular fa-circle-play"></i></span>
+                <span class="bar-play"><i class="fa-solid fa-forward-step"></i></span>
+                <span class="bar-play"><i class="fa-solid fa-arrow-rotate-right"></i></span>
+            </div>
+            <div class="center-bottom">
+                <span class="number">0:25</span>
+                <span class="number line">
+                    <div class="linea-bianca"></div>
+                    <div class="linea-grigia"></div> 
+                </span>
+                <span class="number">4:35</span>
+            </div>
+        </div>
+            
+         
+            
+        <div class="right">
+            <span class="icon icon-right"><i class="fa-solid fa-list"></i></span>
+            <span class="icon icon-right"><i class="fa-sharp fa-solid fa-desktop"></i></span>
+            <span class="icon icon-right"><i class="bi bi-volume-up-fill"></i></span>
+            <div class="linea-bianca2"></div>
+            <div class="linea-grigia2"></div>
+        </div>
+    </footer>
 
 
-    </div>
-
-    <div class="play-bar">
-        <footer >
-
-        </footer>
-    </div>
-  
+    
 </body>
 </html>

@@ -7,104 +7,213 @@
    
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-}
-
-.big-container{
+.main-container{
     display: flex;
     flex-direction: row;
-    height: 100vh;
-    width: 100vw;
+
 }
 
-.first-container{
-    width: 13%;
-    background-color: black;
-    position: fixed;
-    height: 90vh;
-    top: 0;
-    bottom: 0;
-    z-index: 20;
+.music-title{
+    text-align: center;
+    font-weight: 800;
+    color: white;
+    font-size: 15px;
 }
 
-.second-container{
-    width: 87%;
-    margin: auto;
-    width: 100vw;
+.sottotitolo{
+    font-weight:800;
+    font-size: 12px;
+    color: grey;
+    margin-top: 0.5rem;
 }
 
+.title-menù{
+    color: white;
+    padding-left: 1rem;
+    font-size: 25px;
+}
 
+.titolo2{
+    padding-left: 1rem;
+}
 
-/* Header */
+/* Sidebar */
 
-.head{
-    background-color: #090a16;
-    height: 6rem;
+.sidebar{
+    height: 5rem;
+    background-color: #090a16de;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 15;
-
 }
-
 .div-button{
     height: 5rem;
     display: flex;
     align-items: center;
     justify-content: end;
-    width: 99vw;
+    width: 99%;
 }
 
 .button{
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
-    padding-inline: 3rem;
+    padding-inline: 2.5rem;
+    font-size: 12px;
     border-radius: 25px;
     background-color: #090a16;
     color: white;
     border: 1px solid white;
-    margin-left: 5rem;
-    font-weight: 800;
+    font-weight: 800;  
+}
+
+/* Barra Playlist */
+
+.first-container{
+    background-color: black;
+    width: 230px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 20;
     
 }
 
-
-/* Main */
-
-.main-container{
-    background-color: #1a1c2b;
-    height: 200vh;
-    overflow-y: scroll;
-
+.logo{
+    width: 120px;
+    margin: 1.5rem;
 }
 
-
-.container{
-    max-width: 100%;
-    padding-left: 17rem;
-    padding-right: 1rem;
-    padding-top: 7rem;
-    margin: auto;
-   
+.playlist-container{
+    margin-left: 1.5rem;
+    font-size: 11px;
 }
 
-.container-list{
+.playlist-menù{
+    width: 200px;
+}
+
+.icon-playlist{
+    width: 22px;
+    color: grey;
+    font-weight: 600;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.home{
+    color: grey;
+}
+
+.write{
+    margin-left:0.5rem;
+}
+
+.library{
+    display: block ruby;   
+}
+
+
+.playlist{
+    font-weight: 600;
+    color: grey;
+    margin-top: 2rem;
+}
+
+.title-playlist{
+    color: white;
+}
+
+.create-playlist{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fa-square-plus{
+    font-size: 35px;
+    margin-right: 0.5rem ;
+}
+
+.name-playlist{
+    margin-top: 1rem;
+}
+
+/* Playlist-footer */
+
+.playlist-footer{
+    margin-top: 19rem;
+}
+
+.icon-profile{
+    color: white;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0.8rem;
+}
+
+
+.profile{
+    background-color: grey;
+    border-radius: 100%;
+    margin-inline: 0.5rem;
+    width: 20px;
+    height: 20px;
+    padding: 0.5rem grey;
+}
+
+.line-footer{
+    width: 190px;
+}
+
+
+.icon-download{
+    font-size: 11px;
+    font-weight: 600;
+    color: grey;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.download{
+    width: 14px;
+    margin-inline:0.6rem ;
+}
+
+/* Container Musiche */
+
+.container .second-container{
+    margin-left: 230px;
+    padding-top: 5rem;
+}
+
+.second-container{
+    background-color: #1a1c2b;
+    width:calc(100% - 230px);
+    height:calc(100% - 7rem);
+    overflow-y: auto;
+    border: 5px solid #1a1c2b;
+    overflow-y: scroll;
+    position: fixed;
 }
 
 .lista-menù{
     font-weight: 800;
-    font-size: 16px;
+    font-size: 14px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    padding-top:1rem;
     padding-bottom: 2rem;
     color: grey;
 }
@@ -113,72 +222,187 @@ body{
     margin-inline: 1rem;
 }
 
-.title-menù{
-    color: white;
-    padding: 0.4rem;
-    font-size: 36px;
 
-}
+/* Menù - Musiche */
 
-.linea-verde{
-    width: 40px;
-    margin-inline: 2.5rem;
-    color: greenyellow;
-}
-
-
-
-.music-container{
-    max-width: 100%;
+.second-container .music-container{
     display: flex;
     flex-wrap: wrap;
 }
 
-.music{
+.second-container .music{
+    padding: 1rem;
+    width: calc(100% - 4 * 0.5rem) / 6;
     text-align: center;
 }
 
-.img-music{
-    flex-basis: 20%;
-    height: 252px;
-    margin: 0.5rem;
+.second-container img{
+    max-height: 200px;
 }
 
-
-.sottotitolo{
-    margin: 0.5rem;
-    font-weight:800;
-    font-size: 15px;
-    color: grey;
+.Stranger{
+    width: 200px;
+    padding-inline: 0.5rem;
+    margin-left: 0.5rem;
 }
 
-.playlist{
-    text-align: center;
-    font-weight: 800;
-    color: white;
-    font-size: 20px;
+/* Menù - Mix */
+
+.mix-container{
+    display: flex;
+    flex-direction: column;
 }
+
+/* Menù - Playlist */
 
 .circle{
     border-radius: 100%;
 }
 
-.Stranger{
-    width: 250px;
-    padding-inline: 0.5rem;
-    margin-left: 0.5rem;
-}
-
-
-/* Footer */
+/* Play-Bar */
 
 .play-bar{
-    background-color: darkgrey;
-    height: 6rem;
+    background-color: rgb(31, 31, 31);
+    height: 7rem;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 9000;
+    z-index: 25;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
+/* Parte Sinistra - Playbar */
+
+/* Parte Sinistra - Sinistra */
+
+.left{
+    display: flex;
+    align-items: center; 
+}
+
+.left-left{
+    height: 7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;  
+}
+
+.play{
+    height: 60px;
+}
+
+.musica{
+    margin-left: 1rem;
+}
+
+
+.title-play-music{
+    font-size: 15px;
+    color: white;
+    font-weight: 800;
+}
+
+.name-play-music{
+    font-size: 12px;
+    font-weight: 800;
+    color: lightgrey;
+}
+
+/* Parte Sinistra - Destra */
+
+.left-right{
+    margin-left: 2rem;
+    font-size: 20px;
+    color: lightgrey;
+}
+
+.icon{
+    padding-inline: 0.4rem;
+}
+
+
+/* Parte Centrale */
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+/* Parte Centrale - Sopra */
+
+.center-up{
+    color: white;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.bar-play{
+    font-size: 25px;
+    margin-inline: 1rem;
+}
+
+.fa-circle-play{
+    font-size: 35px;
+    margin-inline:1rem;
+}
+
+/* Parte Centrale - Sotto */
+
+.center-bottom{
+    display: flex;
+    align-items: center;
+    flex-direction: row ;
+}
+
+.number{
+    font-size: 12px;
+    color: white;
+    margin-inline: 1rem ;
+}
+
+.line{
+    display: flex;
+    flex-direction: row;
+}
+
+.linea-bianca{
+    width: 80px;
+    border: 2px solid white;
+    border-radius: 2px;
+    
+}
+
+.linea-grigia{
+    width: 500px;
+    border: 2px solid grey;
+    border-radius: 2px;
+}
+
+
+/* Parte Destra */
+
+.right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    padding-right: 0.5rem;
+}
+
+.linea-bianca2{
+    width: 30px;
+    border: 2px solid white;
+    border-radius: 2px;
+}
+.linea-grigia2{
+    width: 80px;
+    border: 2px solid grey;
+    border-radius: 2px;
+}
