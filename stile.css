@@ -1,0 +1,75 @@
+.button:hover{
+    animation-duration: 0.1s;
+    transform: scale(1.1);
+}
+
+.menù:hover{
+    text-decoration: underline yellowgreen;
+    color: white;
+
+}
+
+.first-icons:hover{
+    color: white;
+    list-style:disc yellowgreen;
+}
+
+.name-playlist:hover{
+    color: white;
+}
+
+
+.icon-download:hover{
+    color: white;
+}
+
+.img-music:hover{
+    opacity: 0.5;
+}
+
+
+
+
+/* .play-button:hover{
+    filter: opacity(1);
+    opacity: 1;
+} */
+
+
+
+/* .play-button{
+    font-size: 60px;
+    opacity: 1;
+    padding: 70px;
+    background-color: blue;
+    margin: 0;
+    border: 0;
+    position:absolute;
+    /* opacity: 0; */
+
+
+
+
+/* .b1{
+    left: 16px; 
+}
+
+.b2{
+    left:248px
+}
+
+.b3{
+    left: 488px;
+}
+
+.b4{
+    left:720px
+}
+
+.b5{
+    left: 952px
+}
+
+.b6{
+    left:1184px
+} */
