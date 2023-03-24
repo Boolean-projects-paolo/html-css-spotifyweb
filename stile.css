@@ -20,10 +20,11 @@
     flex-direction: row;
     align-items: center;
     color: white;
+    filter: contrast(0.5);
 }
 
 .icona-hover:hover{
-    filter: contrast(0.5);
+    filter: contrast(1);
    
 }
 
@@ -31,8 +32,8 @@
     color: white;
 }
 
-.icon-download:hover{
-    color: white;
+.hover-app:hover{
+    filter: contrast(1);
 }
 
 
@@ -63,18 +64,20 @@
 
 .img-hover{
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .play-button{
-    font-size: 60px;
-    opacity: 1;
-    padding: 70px;
+    font-size: 50px;
+    padding: 75px;
     background-color: rgba(31, 31, 31, 0.550);
+    /* background-color: rgba(0, 0, 255, 0.527); */
     margin: 0;
     border: 0;
     position: absolute;
-    top:0;
-    left:0;
     opacity: 0;
 }
 
@@ -111,8 +114,19 @@
     
 }
 
+.linea-bianca:hover, .linea-bianca2:hover{
+    background-color: greenyellow;
+}
+
+
 .circle-line:hover{
     opacity: 1;
+}
+
+
+.circle-play:hover{
+    animation-duration: 0.1s;
+    transform: scale(1.2);
 }
 
 .sound{
