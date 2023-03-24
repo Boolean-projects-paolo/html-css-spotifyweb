@@ -1,75 +1,120 @@
+
+/* Hover - Bottone Upgrade */
+
 .button:hover{
     animation-duration: 0.1s;
     transform: scale(1.1);
 }
 
+/* Hover - Menù */
+
 .menù:hover{
     text-decoration: underline yellowgreen;
     color: white;
-
 }
 
-.first-icons:hover{
+/* Hover - Menù laterale */
+
+.icona-hover{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     color: white;
-    list-style:disc yellowgreen;
+}
+
+.icona-hover:hover{
+    filter: contrast(0.5);
+   
 }
 
 .name-playlist:hover{
     color: white;
 }
 
-
 .icon-download:hover{
     color: white;
 }
 
-.img-music:hover{
-    opacity: 0.5;
+
+/* Hover - linea verde */
+
+.lista-play{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
+.linea-verde{
+    color: yellowgreen;
+    background-color: yellowgreen;
+    transform: rotate(90deg);
+    width: 30px;
+    height: 3px;
+    margin: -10px;
+    padding: 0;
+    opacity: 0;
+}
 
-
-
-/* .play-button:hover{
-    filter: opacity(1);
+.linea-verde:hover{
     opacity: 1;
-} */
+}
 
+/* Hover - Immagini musica */
 
+.img-hover{
+    position: relative;
+}
 
-/* .play-button{
+.play-button{
     font-size: 60px;
     opacity: 1;
     padding: 70px;
-    background-color: blue;
+    background-color: rgba(31, 31, 31, 0.550);
     margin: 0;
     border: 0;
-    position:absolute;
-    /* opacity: 0; */
-
-
-
-
-/* .b1{
-    left: 16px; 
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
 }
 
-.b2{
-    left:248px
+.play-button:hover{
+    opacity: 1;
 }
 
-.b3{
-    left: 488px;
+
+/* Hover - Icone footer - Parte sinistra */
+
+.icon:hover{
+    color: white;
 }
 
-.b4{
-    left:720px
+
+
+/* Hover - Barra Musica - Barra volume */
+
+.point-hover{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 1rem;
+    transform: rotate(180deg);
 }
 
-.b5{
-    left: 952px
+.linea-bianca{
+    position: relative;
 }
 
-.b6{
-    left:1184px
-} */
+.circle-line{
+    position: absolute;
+    opacity: 0;
+    
+}
+
+.circle-line:hover{
+    opacity: 1;
+}
+
+.sound{
+    font-size: 10px;
+}

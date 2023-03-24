@@ -88,7 +88,6 @@
 }
 
 .playlist-container{
-    margin-left: 1.5rem;
     font-size: 11px;
 }
 
@@ -96,33 +95,24 @@
     width: 200px;
 }
 
-.icon-playlist{
-    width: 22px;
-    color: grey;
-    font-weight: 600;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.lista-play{
     margin-top: 0.5rem;
 }
 
+
 .home{
-    color: grey;
+    width: 30px;
 }
 
 .write{
     margin-left:0.5rem;
 }
 
-.library{
-    display: block ruby;   
-}
-
-
 .playlist{
     font-weight: 600;
     color: grey;
     margin-top: 2rem;
+    margin-left: 1rem;
 }
 
 .title-playlist{
@@ -241,7 +231,7 @@
 }
 
 .Stranger{
-    width: 200px;
+    width: 190px;
     padding-inline: 0.5rem;
     margin-left: 0.5rem;
 }
@@ -364,24 +354,29 @@
 .number{
     font-size: 12px;
     color: white;
-    margin-inline: 1rem ;
+    margin-inline: 1rem;
 }
 
 .line{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .linea-bianca{
     width: 80px;
-    border: 2px solid white;
+    color: white;
+    background-color: white;
+    height: 5px;
     border-radius: 2px;
     
 }
 
 .linea-grigia{
     width: 500px;
-    border: 2px solid grey;
+    color: grey;
+    background-color: grey;
+    height: 5px;
     border-radius: 2px;
 }
 
@@ -398,11 +393,15 @@
 
 .linea-bianca2{
     width: 30px;
-    border: 2px solid white;
+    height: 5px;
+    color: white;
+    background-color: white;
     border-radius: 2px;
 }
 .linea-grigia2{
     width: 80px;
-    border: 2px solid grey;
+    height: 5px;
+    color: grey;
+    background-color: grey;
     border-radius: 2px;
 }
