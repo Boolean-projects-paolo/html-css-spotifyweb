@@ -21,7 +21,11 @@
 
     <main class="main-container">
         <section class="first-container">
+            <div>
+
+            </div>
             <div class="logo"><img src="img/logo.svg" alt=""></div>
+            <div class="logo-small"><img src="img/logo-small.svg" alt=""></div>
 
             <div class="playlist-container">
 
@@ -65,7 +69,7 @@
                 
                 <div class="playlist">
                     <h4 class="title-playlist">PLAYLIST</h4>
-                    <div class=""></div>
+
                     <ul class="list-playlist">
                         <li class="name-playlist create-playlist"><i class="fa-sharp fa-solid fa-square-plus"></i><p>Crea Playlist</p></li>
                         <li class="name-playlist">Nome Playlist</li>
@@ -83,10 +87,10 @@
                         <li class="icon-download"> 
                             <div class="hover-app">
                                 <img src="img/download.svg" class="download" alt="">
-                                <p>Installa app</p>
+                                <p class="install-app">Installa app</p>
                             </div>
                         </li>   
-                        <li><hr class="line-footer"></li>
+                        <li><div class="line-footer"></div></li>
                         <li class="icon-profile">
                             <img src="img/profile.svg" class="profile" alt="">
                             <p class="write-profile">John Doe</p>
@@ -219,57 +223,69 @@
 
     </main>
 
-    <footer class="play-bar">
-        <div class="left">
-            <div class="left-left">
-                <img src="img/sinister.jpeg" alt="" class="play musica">
-                <ul class="musica">
-                    <li class="title-play-music"><p>Sinister</p></li>
-                    <li class="name-play-music"><p>Brano Nome</p></li>
-                </ul>
-            </div>
-
-
-            <div class="left-right">
-                <span class="icon"><i class="fa-sharp fa-regular fa-heart"></i></span>
-                <span class="icon"><i class="fa-regular fa-folder"></i></span>
-            </div>
-        </div>
-
-        <div class="center">
-            <div class="center-up">
-                <span class="bar-play"></span>
-                <span class="bar-play"><i class="fa-solid fa-shuffle"></i></span>
-                <span class="bar-play"><i class="fa-solid fa-backward-step"></i></span>
-                <span class="bar-play"><i class="fa-regular fa-circle-play circle-play"></i></span>
-                <span class="bar-play"><i class="fa-solid fa-forward-step"></i></span>
-                <span class="bar-play"><i class="fa-solid fa-arrow-rotate-right"></i></span>
-            </div>
-            <div class="center-bottom">
-                <span class="number">0:25</span>
-                <div class="number line">
-                    <div class="point-hover">
-                        <hr class="linea-bianca">
-                        <i class="fa-sharp fa-solid fa-circle circle-line"></i> 
-                    </div>
-                    <hr class="linea-grigia">
+    <footer>
+        <div class="play-bar" >
+            <div class="left">
+                <div class="left-left">
+                    <img src="img/sinister.jpeg" alt="" class="play musica">
+                    <ul class="musica">
+                        <li class="title-play-music"><p>Sinister</p></li>
+                        <li class="name-play-music"><p>Brano Nome</p></li>
+                    </ul>
                 </div>
-                <span class="number">4:35</span>
+    
+    
+                <div class="left-right">
+                    <span class="icon"><i class="fa-sharp fa-regular fa-heart"></i></span>
+                    <span class="icon"><i class="fa-regular fa-folder"></i></span>
+                </div>
+            </div>
+    
+            <div class="center">
+                <div class="center-up">
+                    <div class="container-bar-play">
+                        <span class="bar-play"><i class="fa-solid fa-shuffle"></i></span>
+                    </div>
+                    <div class="container-bar-play">
+                        <span class="bar-play"><i class="fa-solid fa-backward-step"></i></span>
+                    </div>
+                    <div class="container-bar-play">
+                        <span class="bar-play"><i class="fa-regular fa-circle-play circle-play"></i></span>
+                    </div>
+                    <div class="container-bar-play">
+                        <span class="bar-play"><i class="fa-solid fa-forward-step"></i></span>
+                    </div>
+                    <div class="container-bar-play">
+                        <span class="bar-play"><i class="fa-solid fa-arrow-rotate-right"></i></span>
+                    </div> 
+                </div>
+    
+    
+                <div class="center-bottom">
+                    <span class="number">0:25</span>
+                    <div class="line">
+                        <div class="point-hover">
+                            <div class="linea-bianca"></div>
+                            <i class="fa-sharp fa-solid fa-circle circle-line"></i> 
+                        </div>
+                        <div class="linea-grigia"></div>
+                    </div>
+                    <span class="number">4:35</span>
+                </div> 
+            </div>
+    
+            <div class="right">
+                <span class="icon icon-right"><i class="fa-solid fa-list"></i></span>
+                <span class="icon icon-right"><i class="fa-sharp fa-solid fa-desktop"></i></span>
+                <span class="icon icon-right"><i class="bi bi-volume-up-fill"></i></span>
+                <div class="point-hover">
+                    <hr class="linea-bianca2">
+                    <i class="fa-sharp fa-solid fa-circle circle-line sound"></i> 
+                </div>
+                <hr class="linea-grigia2">
             </div>
         </div>
-            
-         
-            
-        <div class="right">
-            <span class="icon icon-right"><i class="fa-solid fa-list"></i></span>
-            <span class="icon icon-right"><i class="fa-sharp fa-solid fa-desktop"></i></span>
-            <span class="icon icon-right"><i class="bi bi-volume-up-fill"></i></span>
-            <div class="point-hover">
-                <hr class="linea-bianca2">
-                <i class="fa-sharp fa-solid fa-circle circle-line sound"></i> 
-            </div>
-            <hr class="linea-grigia2">
-        </div>
+        
     </footer>
 
 

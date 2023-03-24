@@ -73,7 +73,7 @@
 
 .first-container{
     background-color: black;
-    width: 230px;
+    width: 180px;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -85,6 +85,12 @@
 .logo{
     width: 120px;
     margin: 1.5rem;
+    position: relative;
+}
+
+.logo-small{
+    position: absolute;
+    
 }
 
 .playlist-container{
@@ -164,8 +170,11 @@
 }
 
 .line-footer{
-    width: 190px;
+    width: 86%;
+    height: 1px;
     margin-left: 0.5rem;
+    margin: 5px solid grey;
+    background-color: grey;
 }
 
 .icon-profile{
@@ -194,14 +203,14 @@
 /* Container Musiche */
 
 .container .second-container{
-    margin-left: 230px;
+    margin-left: 180px;
     padding-top: 5rem;
 }
 
 .second-container{
     background-color: #1a1c2b;
-    width:calc(100% - 230px);
-    height:calc(100% - 7rem);
+    width:calc(100% - 180px);
+    height:calc(100% - 5rem);
     overflow-y: auto;
     border: 5px solid #1a1c2b;
     overflow-y: scroll;
@@ -230,22 +239,21 @@
 .second-container .music-container{
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.second-container .music{
+.music-container .music{
     padding: 1rem;
-    width: calc(100% - 4 * 0.5rem) / 6;
-    text-align: center;
+    flex-basis: calc((100% - (5 * 1.5rem)) / 6);
+    text-align:center;
 }
 
-.second-container img{
-    max-height: 200px;
-}
+.second-container .music-title{
+    width: 100%
 
-.Stranger{
-    width: 190px;
-    padding-inline: 0.5rem;
-    margin-left: 0.5rem;
+}
+.img-music{
+    width:100%;
 }
 
 /* Menù - Mix */
@@ -265,7 +273,7 @@
 
 .play-bar{
     background-color: rgb(31, 31, 31);
-    height: 7rem;
+    height: 5rem;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -274,6 +282,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
 }
 
 /* Parte Sinistra - Playbar */
@@ -283,6 +292,7 @@
 .left{
     display: flex;
     align-items: center; 
+    width: 16%;
 }
 
 .left-left{
@@ -290,11 +300,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
+    width: 60%;  
 }
 
 .play{
-    height: 60px;
+    height: 50%;
 }
 
 .musica{
@@ -303,13 +314,13 @@
 
 
 .title-play-music{
-    font-size: 15px;
+    font-size: 100%;
     color: white;
     font-weight: 800;
 }
 
 .name-play-music{
-    font-size: 12px;
+    font-size: 80%;
     font-weight: 800;
     color: lightgrey;
 }
@@ -318,8 +329,9 @@
 
 .left-right{
     margin-left: 2rem;
-    font-size: 20px;
+    font-size: 100%;
     color: lightgrey;
+    width: 40%;
 }
 
 .icon{
@@ -333,25 +345,38 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 1rem;
+    justify-content: center;
+    padding-top: 0.5rem;
+    width: 68%;
 }
 
 /* Parte Centrale - Sopra */
 
 .center-up{
     color: white;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
     display: flex;
+    justify-content: space-around;
     align-items: center;
+    width: 28%;
 }
 
+.container-bar-play{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+
 .bar-play{
-    font-size: 25px;
+    font-size: 100%;
     margin-inline: 1rem;
 }
 
+
+
 .fa-circle-play{
-    font-size: 35px;
+    font-size: 180%;
     margin-inline:1rem;
 }
 
@@ -361,22 +386,24 @@
     display: flex;
     align-items: center;
     flex-direction: row ;
+    width: 68%;
 }
 
 .number{
-    font-size: 12px;
+    font-size: 80%;
     color: white;
-    margin-inline: 1rem;
+    margin-inline: 1rem;  
 }
 
 .line{
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-basis: 100%;
 }
 
 .linea-bianca{
-    width: 80px;
+    width: 100%;
     color: white;
     background-color: white;
     height: 5px;
@@ -385,7 +412,7 @@
 }
 
 .linea-grigia{
-    width: 500px;
+    width: 80%;
     color: grey;
     background-color: grey;
     height: 5px;
@@ -400,18 +427,21 @@
     flex-direction: row;
     align-items: center;
     color: white;
-    padding-right: 0.5rem;
+    width: 16%;
 }
 
+
+
+
 .linea-bianca2{
-    width: 30px;
+    width: 90% ;
     height: 5px;
     color: white;
     background-color: white;
     border-radius: 2px;
 }
 .linea-grigia2{
-    width: 80px;
+    width: 45%;
     height: 5px;
     color: grey;
     background-color: grey;
