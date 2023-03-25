@@ -1,19 +1,21 @@
 
-/* Hover - Bottone Upgrade */
+/***************** Hover - Bottone Upgrade ****************/
 
 .button:hover{
     animation-duration: 0.1s;
     transform: scale(1.1);
+    cursor: pointer;
 }
 
-/* Hover - Menù */
+/******************* Hover - Menù *************************/
 
 .menù:hover{
     text-decoration: underline yellowgreen;
     color: white;
+    cursor: pointer;
 }
 
-/* Hover - Menù laterale */
+/******************* Hover - Menù laterale ****************/
 
 .icona-hover{
     display: flex;
@@ -21,19 +23,23 @@
     align-items: center;
     color: white;
     filter: contrast(0.5);
+    cursor: pointer;
 }
 
-.icona-hover:hover{
+.lista-play:hover .icona-hover{
     filter: contrast(1);
+    cursor: pointer;
    
 }
 
 .name-playlist:hover{
     color: white;
+    cursor: pointer;
 }
 
 .hover-app:hover{
     filter: contrast(1);
+    cursor: pointer;
 }
 
 
@@ -56,11 +62,12 @@
     opacity: 0;
 }
 
-.linea-verde:hover{
+.lista-play:hover .linea-verde{
     opacity: 1;
+    cursor: pointer;
 }
 
-/* Hover - Immagini musica */
+/***************** Hover - Immagini musica ****************/
 
 .img-hover{
     position: relative;
@@ -84,18 +91,20 @@
 
 .play-button:hover{
     opacity: 1;
+    cursor: pointer;
 }
 
 
-/* Hover - Icone footer - Parte sinistra */
+/************ Hover - Icone footer - Parte sinistra ********/
 
 .icon:hover{
     color: white;
+    cursor: pointer;
 }
 
 
 
-/* Hover - Barra Musica - Barra volume */
+/************ Hover - Barra Musica - Barra volume **********/
 
 .point-hover{
     display: flex;
@@ -117,17 +126,21 @@
 
 .point-hover:hover .linea-bianca{
     background-color: greenyellow;
+    cursor: pointer;
 }
 
 
 .point-hover:hover .circle-line{
     opacity: 1;
+    color: white;
+    cursor: pointer;
 }
 
 
 .circle-play:hover{
     animation-duration: 0.1s;
     transform: scale(1.2);
+    cursor: pointer;
 }
 
 .sound{
@@ -136,18 +149,13 @@
 
 .point-hover:hover .linea-bianca2{
     background-color: greenyellow;
+    cursor: pointer;
 }
 
+/****************** App - Schermo Desktop ******************/
 
 
-
-@media screen and (min-width: 1200px) { 
-    
-    .playlist-footer{
-        padding-top: 7rem;
-    }
-    
-    
+@media screen and (min-width: 1200px){ 
     .play-button{
         width: 100%;
         height: 100%;
@@ -159,15 +167,14 @@
     }
 }
 
+/************ App - Schermo Desktop - Tablet ***************/
+
 @media screen and (min-width:768px) and (max-width:1200px){
 
+    /* Container Musiche */
     
     .lista-menù{
         font-size: 9px;
-    }
-
-    .playlist-footer{
-        padding-top: 7rem;
     }
     
     .second-container{
@@ -191,7 +198,6 @@
         text-align:center;
     }
 
-
     .music-title{
         width: 100%;
         font-size: 12px
@@ -209,9 +215,17 @@
         padding-inline: 2rem;
     }
 
+    .left-left .musica{
+        font-size: 70%
+    }
+
 }
 
+/******** App - Schermo Tablet - Schermo Telefono **********/
+
 @media screen and (max-width: 768px) {
+
+    /* Sidebar */
 
     .button{
         font-size: 10px;
@@ -220,9 +234,18 @@
         padding-bottom: 0.5rem;
     }
 
-    .playlist-footer{
-        padding-top: 7rem;
+
+
+    .playlist-container{
+        font-size: 10px;
     }
+
+    .lista-icone-play .home{
+        width: 20px;
+        
+    }
+
+    /* Container Musiche */
 
     .lista-menù{
         font-size: 10px;
@@ -241,8 +264,6 @@
     .second-container{
         min-width: calc(100% - 180px);
     }
-
-
 
     .music-container{
         width: 95%;
@@ -277,11 +298,13 @@
         width:100%;
     }
 
+    /* Play-bar */
+
     .play-bar{
         padding-inline: 0.5rem;
     }
-
-
+    
+    /* Parte destra */
 
     .left{
         width: 30%;
@@ -313,9 +336,7 @@
         flex-direction: column;
     }
 
-
-
-
+    /* Parte Centrale */
 
     .center{
         width: 40%;
@@ -329,6 +350,7 @@
         width: 100%;
     }
 
+    /* Parte Sinistra */
     
     .right{
         width: 30%;
@@ -336,7 +358,17 @@
     }
 }
 
+
+/***************** App - Schermo Telefono ******************/
+
+
 @media screen and (max-width: 480px) {
+
+    /* Sidebar */
+
+    .div-button{
+        width: 96%;
+    }
 
     .button{
         font-size: 10px;
@@ -345,8 +377,37 @@
         padding-bottom: 0.5rem;
     }
 
+    /* Barra Playlist */
+
     .first-container{
         width: 50px;
+    }
+
+    .first-sub-container{
+        width: 50px;
+    }
+
+    .logo-small{
+        height: 35px;
+        width: 35px;
+        top: 0;
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+        display: flex;
+    }
+
+    .playlist-menù{
+        padding-top:3.5rem;
+        width: 50px;
+    }
+
+    .lista-icone-play{
+        width: 50px;
+    }
+
+    .lista-icone-play .home{
+        width: 30px;
+        
     }
 
     .logo{
@@ -373,14 +434,12 @@
         display: none;
     }
 
-
-    
-
     .playlist-footer{
-        padding-top: 32rem;
         display: flex;
-        justify-content: center;  
-        margin-inline:0
+        align-items: center;
+        justify-content: center; 
+        margin: 0;
+        margin-bottom: 0.5rem;
     }
 
     .icon-download{
@@ -393,10 +452,11 @@
         margin-inline: 0;
     }
 
+    /* Container Musiche */
 
     .lista-menù{
-        font-size: 12px;
-        padding-inline: 0.5rem;
+        font-size: 9px;
+    
     }
 
     .menù{
@@ -413,8 +473,6 @@
         min-width: calc(100% - 50px);
     }
 
-
-
     .music-container{
         width: 95%;
         margin-left: 1rem;
@@ -426,7 +484,7 @@
     }
 
     .title-menù{
-        font-size: 30px;
+        font-size: 26px;
     }
     
     .music-container .music{
@@ -437,22 +495,24 @@
 
     .music-title{
         width: 100%;
-        font-size: 15px
+        font-size: 13px
     }
 
     .sottotitolo{
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .img-music{
         width:100%;
     }
 
+    /* Paly-bar */
+
     .play-bar{
         padding-inline: 0.5rem;
     }
 
-
+    /* Parte Sinistra */
 
     .left{
         width: 30%;
@@ -484,9 +544,7 @@
         flex-direction: column;
     }
 
-
-
-
+    /* Parte Centrale */
 
     .center{
         width: 40%;
@@ -500,6 +558,7 @@
         width: 100%;
     }
 
+    /* Parte Destra */
     
     .right{
         width: 30%;

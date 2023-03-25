@@ -10,7 +10,6 @@
 .main-container{
     display: flex;
     flex-direction: row;
-
 }
 
 .music-title{
@@ -37,7 +36,7 @@
     padding-left: 1rem;
 }
 
-/* Sidebar */
+/************************* Sidebar ************************/
 
 .sidebar{
     height: 5rem;
@@ -69,36 +68,62 @@
     font-weight: 800;  
 }
 
-/* Barra Playlist */
+/********************* Barra Playlist *********************/
 
 .first-container{
     background-color: black;
     width: 180px;
-    height: 100vh;
+    height: calc(100% - 8vh);
     position: fixed;
     top: 0;
     bottom: 0;
     z-index: 20;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.first-sub-container{
+    background-color: black;
+    width: 180px;
+    top: 0;
+    bottom: 0;
+    z-index: 20;
+}
+
+.playlist-footer{
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .logo{
     width: 120px;
-    margin: 1.5rem;
+    margin: 1rem;
     position: relative;
 }
 
+/*********************************************************/
+
+/* Logo - Hover */
+
 .logo-small{
     position: absolute;
-    
+    height: 35px;
+    width: 35px;
+    top: 0;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    display: none;  
 }
+
+/*********************************************************/
 
 .playlist-container{
     font-size: 12px;
 }
 
 .playlist-menù{
-    width: 200px;
+    width: 180px;
 }
 
 .lista-play{
@@ -112,6 +137,7 @@
 
 .write{
     margin-left:0.5rem;
+    font-weight: 700;
 }
 
 .playlist{
@@ -141,11 +167,6 @@
 }
 
 /* Playlist-footer */
-
-.playlist-footer{
-    margin-top: 16rem;
-    margin-left: 0.5rem;
-}
 
 .icon-download{
     font-size: 11px;
@@ -200,7 +221,7 @@
     font-size: 15px;
 }
 
-/* Container Musiche */
+/********************Container Musiche ********************/
 
 .container .second-container{
     margin-left: 180px;
@@ -210,7 +231,7 @@
 .second-container{
     background-color: #1a1c2b;
     width:calc(100% - 180px);
-    height:calc(100% - 5rem);
+    height:calc(100% - 8vh);
     overflow-y: auto;
     border: 5px solid #1a1c2b;
     overflow-y: scroll;
@@ -269,11 +290,11 @@
     border-radius: 100%;
 }
 
-/* Play-Bar */
+/*********************** Play-Bar *************************/
 
 .play-bar{
     background-color: rgb(31, 31, 31);
-    height: 5rem;
+    height: calc(100% - 92vh);
     position: fixed;
     bottom: 0;
     left: 0;
@@ -285,7 +306,7 @@
     width: 100%;
 }
 
-/* Parte Sinistra - Playbar */
+/************** Parte Sinistra - Playbar ******************/
 
 /* Parte Sinistra - Sinistra */
 
@@ -339,7 +360,7 @@
 }
 
 
-/* Parte Centrale */
+/**************** Parte Centrale - Playbar *****************/
 
 .center{
     display: flex;
@@ -420,7 +441,7 @@
 }
 
 
-/* Parte Destra */
+/***************** Parte Destra - Playbar ******************/
 
 .right{
     display: flex;
@@ -429,9 +450,6 @@
     color: white;
     width: 16%;
 }
-
-
-
 
 .linea-bianca2{
     width: 90% ;
